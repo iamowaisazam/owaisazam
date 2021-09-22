@@ -1,0 +1,22 @@
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+    header .mobile{
+        display: block;
+    }
+
+    header .desktop{
+        display: none;
+    }
+
+
+
+    .menu_area .navbar .navbar-nav .nav-item{
+        border-bottom: 1px solid lightgray;
+    }
+
+    .navbar-toggler:focus-visible {
+       outline: none!important;
+    }
+  
+  }
