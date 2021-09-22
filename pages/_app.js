@@ -18,7 +18,7 @@ NProgress.configure({
 
 Router.onRouteChangeStart = url => {
   NProgress.start();
-  console.log(url);
+ // console.log(url);
 }
 
 Router.onRouteChangeComplete = url => {
