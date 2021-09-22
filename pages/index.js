@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import {useRouter} from 'next/router'
 
-export default function Home() {
+export default function Home({products}) {
   
    const router = useRouter();
    if(router.isFallback){
@@ -170,91 +170,26 @@ export default function Home() {
                <p>Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia. Lorem ipsum dolor sit amet consectetur adipisicing dolore.</p>
             </div>
          </div>
-            <div className="row">
-
-              <div className="col-lg-4 col-sm-6">
-              <Link href="/"  ><a >
-                <div className="card card-shadow card-one">
-                  <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/c1.jpg"  />
-                    <figcaption></figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <h6>Financial Sustainability</h6>
+         <div className="row">
+                { products.map( (element,key) => {   
+                 return <div key={key} className="col-lg-4 col-sm-6">
+                  <Link href={`/our-works/${element.slug}`}  ><a >
+                    <div className="card card-shadow card-one">
+                      <figure>
+                        <img src={element.thumbnail}  />
+                        <figcaption></figcaption>
+                      </figure>
+                      <div className="card-body">
+                        <h6>{element.title}</h6>
+                      </div>
+                    </div></a></Link>
                   </div>
-                </div></a></Link>
-              </div>{/* ends: .col-lg-4 */}
-
-              <div className="col-lg-4 col-sm-6">
-              <Link href="/"  ><a >
-                <div className="card card-shadow card-one">
-                  <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/c1.jpg"  />
-                    <figcaption></figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <h6>Financial Sustainability</h6>
-                  </div>
-                </div></a></Link>
-              </div>{/* ends: .col-lg-4 */}
-
-              <div className="col-lg-4 col-sm-6">
-              <Link href="/"  ><a >
-                <div className="card card-shadow card-one">
-                  <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/c1.jpg"  />
-                    <figcaption></figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <h6>Financial Sustainability</h6>
-                  </div>
-                </div></a></Link>
-              </div>{/* ends: .col-lg-4 */}
-
-
-              <div className="col-lg-4 col-sm-6">
-              <Link href="/"  ><a >
-                <div className="card card-shadow card-one">
-                  <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/c1.jpg"  />
-                    <figcaption></figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <h6>Financial Sustainability</h6>
-                  </div>
-                </div></a></Link>
-              </div>{/* ends: .col-lg-4 */}
-
-              <div className="col-lg-4 col-sm-6">
-              <Link href="/"  ><a >
-                <div className="card card-shadow card-one">
-                  <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/c1.jpg"  />
-                    <figcaption></figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <h6>Financial Sustainability</h6>
-                  </div>
-                </div></a></Link>
-              </div>{/* ends: .col-lg-4 */}
-
-              <div className="col-lg-4 col-sm-6">
-              <Link href="/"  ><a >
-                <div className="card card-shadow card-one">
-                  <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/c1.jpg"  />
-                    <figcaption></figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <h6>Financial Sustainability</h6>
-                  </div>
-                </div></a></Link>
-              </div>{/* ends: .col-lg-4 */}
-  
+                   })
+                }
+ 
             <div className="col-lg-12 text-center m-top-50">
               <Link href="/our-works"><a  className="btn btn-primary text-white ">View All</a></Link>
             </div>
-
             </div>
           </div>
         </div>
@@ -331,5 +266,17 @@ export default function Home() {
 
     </>
   )
+
+}
+
+
+export async function getStaticProps(){
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}`);  
+  const products = await res.json();  
+  return {
+      props:{
+          products,
+      }
+  }
 
 }
