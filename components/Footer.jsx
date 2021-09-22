@@ -5,13 +5,12 @@ import Link from 'next/link';
 const Footer = () => {
 
 //   const submit = (e) => {
-      
 //     e.preventDefault();
 //     e.target.email.value = "";
 //     toast.success("Successfully Subscribed");
 //  }
 
-    return (
+return (
         <>
        <footer className="footer6 footer--light-gradient">
             <div className="footer__big">
@@ -86,15 +85,15 @@ const Footer = () => {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="footer__bottom-content">
-                      <p>© 2020.  All rights reserved. Created by OwaisAzamTechnical</p>
+                      <p>© 2020. All rights reserved. Created by OwaisAzamTechnical</p>
                       <div className="social-basic ">
                           <ul className="d-flex justify-content-end ">
-                              <li><Link target="_blank" href="https://twitter.com/iamowaisazam" ><a><span className="fab fa-twitter" /></a></Link></li>
-                              <li><Link target="_blank" href="https://www.facebook.com/owaisazamtechnical/"  ><a><span className="fab fa-facebook-square" /></a></Link></li>
-                              <li><Link target="_blank" href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi" ><a><span className="fab fa-whatsapp" /></a></Link></li>
-                              <li><Link target="_blank" href="https://www.linkedin.com/in/owais-azam-b345a4149/"  ><a><span className="fab fa-linkedin" /></a></Link></li>
-                              <li><Link target="_blank" href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a><span className="fab fa-youtube" /></a></Link></li>
-                              <li><Link target="_blank" href="/" ><a><span className="fab fa-skype" /></a></Link></li>
+                              <li><Link href="https://twitter.com/iamowaisazam" ><a target="_blank"><span className="fab fa-twitter" /></a></Link></li>
+                              <li><Link href="https://www.facebook.com/owaisazamtechnical/"><a target="_blank"><span className="fab fa-facebook-square" /></a></Link></li>
+                              <li><Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi" ><a target="_blank" ><span className="fab fa-whatsapp" /></a></Link></li>
+                              <li><Link  href="https://www.linkedin.com/in/owais-azam-b345a4149/"  ><a target="_blank" ><span className="fab fa-linkedin" /></a></Link></li>
+                              <li><Link href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a target="_blank"><span className="fab fa-youtube" /></a></Link></li>
+                              <li><Link href="/" ><a target="_blank" ><span className="fab fa-skype" /></a></Link></li>
                           </ul>
                       </div>
                     </div>

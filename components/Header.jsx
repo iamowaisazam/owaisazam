@@ -44,12 +44,12 @@ const Header = () => {
                           </div>
                       </div>
                       <div className=" social-icons col-md-12 col-lg-4 align-self-center text-center text-lg-right" >
-                      <Link target="_blank" href="https://twitter.com/iamowaisazam" ><a><i className="fab fa-twitter"></i></a></Link>
-                      <Link target="_blank" href="https://www.facebook.com/owaisazamtechnical/"  ><a><i className="fab fa-facebook-square"></i></a></Link>
-                      <Link target="_blank" href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi"  ><a><i className="fab fa-whatsapp"></i></a></Link>
-                      <Link target="_blank" href="https://www.linkedin.com/in/owais-azam-b345a4149/" ><a><i className="fab fa-linkedin"></i></a></Link>
-                      <Link target="_blank" href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a><i className="fab fa-youtube"></i></a></Link>
-                      <Link target="_blank" href="/" ><a><i className="fab fa-skype"></i></a></Link>
+                      <Link  href="https://twitter.com/iamowaisazam" ><a target="_blank" ><i className="fab fa-twitter"></i></a></Link>
+                      <Link href="https://www.facebook.com/owaisazamtechnical/"  ><a target="_blank"><i className="fab fa-facebook-square"></i></a></Link>
+                      <Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi"  ><a target="_blank"><i className="fab fa-whatsapp"></i></a></Link>
+                      <Link href="https://www.linkedin.com/in/owais-azam-b345a4149/" ><a target="_blank"><i className="fab fa-linkedin"></i></a></Link>
+                      <Link href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a target="_blank"><i className="fab fa-youtube"></i></a></Link>
+                      <Link href="/" ><a target="_blank" ><i className="fab fa-skype"></i></a></Link>
                       </div>
                   </div>
               </div>

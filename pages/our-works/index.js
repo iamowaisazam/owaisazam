@@ -3,17 +3,9 @@ import Head from 'next/head'
 import {toast} from 'react-toastify';
 import Link from 'next/link'
 
-export default function Contact({products}) {
-
-
-  useEffect(() => {
-
-    
-
-  },[]);
+export default function Works({products}) {
 
   return (
-
     <>
       <Head>
         <title>Our Works</title>
@@ -41,11 +33,9 @@ export default function Contact({products}) {
         <div className="card--one">
           <div className="container">
             <div className="row">
-              
-             { products.map( (element,key) => {
-                
+             { products.map( (element,key) => {   
                 return <div key={key} className="col-lg-4 col-sm-6">
-                  <Link href={`/our-works/${element.slug}`}  ><a >
+                  <Link href={`/our-works/${element.slug}`}  ><a>
                     <div className="card card-shadow card-one">
                       <figure>
                         <img src={element.thumbnail}  />
@@ -57,9 +47,7 @@ export default function Contact({products}) {
                     </div></a></Link>
                   </div>
                 })
-
             }
-
          </div>
        </div>
      </div>
@@ -77,4 +65,5 @@ export async function getStaticProps(){
           products,
       }
   }
+
 }
