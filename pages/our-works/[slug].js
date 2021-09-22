@@ -36,7 +36,7 @@ export async function getStaticPaths() {
           { params: { slug: 'car-booking' } },
           { params: { slug: 'staffing-management' } },
         ],
-        fallback: true,
+        fallback: false,
       }
   }
 
