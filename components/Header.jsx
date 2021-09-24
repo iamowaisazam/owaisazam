@@ -49,7 +49,7 @@ const Header = () => {
                       <Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi"  ><a target="_blank"><i className="fab fa-whatsapp"></i></a></Link>
                       <Link href="https://www.linkedin.com/in/owais-azam-b345a4149/" ><a target="_blank"><i className="fab fa-linkedin"></i></a></Link>
                       <Link href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a target="_blank"><i className="fab fa-youtube"></i></a></Link>
-                      <Link href="/" ><a target="_blank" ><i className="fab fa-skype"></i></a></Link>
+                      
                       </div>
                   </div>
               </div>
@@ -69,7 +69,7 @@ const Header = () => {
                                 <Link href="/about" ><a className="nav-link" >About</a></Link>
                               </li>
                               <li className="nav-item ">
-                                 <Link href="/our-works" ><a className="nav-link" >Our Works</a></Link>
+                                 <Link href="/portfolios" ><a className="nav-link" >Our Works</a></Link>
                               </li>
                               <li className="nav-item dropdown  ">
                               <Link href="/services" ><a  className="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a></Link> 
@@ -103,7 +103,7 @@ const Header = () => {
                         <Link href="/about" ><a className="nav-link" >About</a></Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/our-works" ><a className="nav-link" >Our Works</a></Link>
+                        <Link href="/portfolios" ><a className="nav-link" >Our Works</a></Link>
                       </li>
                       <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>

@@ -29,10 +29,10 @@ return (
                         <h4 className="widget__title2 widget-title">Quick Links</h4>
                         <div className="menu-footer-1-container">
                               <ul id="menu-footer-1" className="menu links">
-                                <li  className="menu-item "><Link target="_blank" href="/about" ><a >About</a></Link></li>
-                                <li  className="menu-item "><Link target="_blank" href="/our-works" ><a >Our Works</a></Link></li>
-                                <li  className="menu-item "><Link target="_blank" href="/contact" ><a>Contact</a></Link></li>
-                                <li  className="menu-item "><Link target="_blank" href="/faq" ><a>Faq</a></Link></li>
+                              <li  className="menu-item "><Link  href="/" ><a >Home</a></Link></li>
+                                <li  className="menu-item "><Link href="/about" ><a >About</a></Link></li>
+                                <li  className="menu-item "><Link href="/portfolios" ><a >Our Works</a></Link></li>
+                                <li  className="menu-item "><Link href="/contact" ><a>Contact</a></Link></li>
                               </ul>
                             </div>
                           </div>
@@ -93,7 +93,7 @@ return (
                               <li><Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi" ><a target="_blank" ><span className="fab fa-whatsapp" /></a></Link></li>
                               <li><Link  href="https://www.linkedin.com/in/owais-azam-b345a4149/"  ><a target="_blank" ><span className="fab fa-linkedin" /></a></Link></li>
                               <li><Link href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a target="_blank"><span className="fab fa-youtube" /></a></Link></li>
-                              <li><Link href="/" ><a target="_blank" ><span className="fab fa-skype" /></a></Link></li>
+                              
                           </ul>
                       </div>
                     </div>

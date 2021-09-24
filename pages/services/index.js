@@ -44,7 +44,7 @@ export default function Contact() {
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
                   <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" />
+                    <img src="/images/services/traditional-application.png" />
                   </figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
@@ -63,7 +63,7 @@ export default function Contact() {
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
                   <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" />
+                    <img src="/images/services/modern-application.png" />
                   </figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
@@ -82,7 +82,7 @@ export default function Contact() {
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
                   <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" />
+                    <img src="/images/services/wordpres-application.png" />
                   </figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
@@ -100,7 +100,7 @@ export default function Contact() {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
-                  <figure><img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" /></figure>
+                  <figure><img src="/images/services/custom-web-development.png" /></figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
                       <div className="content-top">

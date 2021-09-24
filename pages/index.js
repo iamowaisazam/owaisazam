@@ -12,13 +12,10 @@ export default function Home({products}) {
 
   return (
     <>
-
       <style jsx>{`
       
 
-      
       `}</style>
-
         <Head>
             <title>Home</title>
         </Head>
@@ -55,14 +52,14 @@ export default function Home({products}) {
           <div className="container">
           <div className="row"><div className="col-12 text-center py-5 " >
             <h1 className="section_heading" >Our Services</h1>
-            <p>Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia. Lorem ipsum dolor sit amet consectetur adipisicing dolore.</p>
+            <p>We try to provide the best solutions and services(website design and Development services) to companies and organizations with our services. we offer our clients tailor-made services, fast services, and our services cost-effective.</p>
             </div>
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
                   <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" />
+                    <img src="/images/services/traditional-application.png" />
                   </figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
@@ -81,7 +78,7 @@ export default function Home({products}) {
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
                   <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" />
+                    <img src="/images/services/modern-application.png" />
                   </figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
@@ -100,7 +97,7 @@ export default function Home({products}) {
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
                   <figure>
-                    <img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" />
+                    <img src="/images/services/wordpres-application.png" />
                   </figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
@@ -118,7 +115,7 @@ export default function Home({products}) {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="card card--eleven">
-                  <figure><img src="https://demo.jsnorm.com/html/tizara/dist/img/g1.jpg" /></figure>
+                  <figure><img src="/images/services/custom-web-development.png" /></figure>
                   <div className="card-body text-center">
                     <div className="card-contents">
                       <div className="content-top">
@@ -167,13 +164,13 @@ export default function Home({products}) {
           <div className="row">
             <div className="col-12 text-center py-5 " >
                <h1 className="section_heading" >Our Works</h1>
-               <p>Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia. Lorem ipsum dolor sit amet consectetur adipisicing dolore.</p>
+               <p>SOME OF OUR AWESOME WORKS. We are showcasing our amazing and inspiring portfolios.</p>
             </div>
          </div>
          <div className="row">
                 { products.map( (element,key) => {   
                  return <div key={key} className="col-lg-4 col-sm-6">
-                  <Link href={`/our-works/${element.slug}`}  ><a >
+                  <Link href={`/portfolios/${element.slug}`}  ><a >
                     <div className="card card-shadow card-one">
                       <figure>
                         <img src={element.thumbnail}  />
@@ -224,7 +221,7 @@ export default function Home({products}) {
           <div className="row">
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="team-single team-four">
-                <img src="https://demo.jsnorm.com/html/tizara/dist/img/t12.jpg"  />
+                <img src="/images/team/t12.jpg"  />
                 <div className="content text-center">
                   <h6><a style={{'color': '#413aa4'}} >Nasir Iqbal</a></h6>
                   <span className="subtitle">Web Developer</span>
@@ -233,16 +230,16 @@ export default function Home({products}) {
             </div>{/* ends: .col-lg-3 */}
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="team-single team-four">
-                <img src="https://demo.jsnorm.com/html/tizara/dist/img/t12.jpg" alt="" />
+                <img src="/images/team/t13.jpg"  />
                 <div className="content text-center">
-                  <h6><a style={{'color': '#413aa4'}} >Amber Ahmed</a></h6>
+                  <h6><a style={{'color': '#413aa4'}} >Saleem Khan</a></h6>
                   <span className="subtitle">Content Writer</span>
                 </div>
               </div>{/* ends: .team-single */}
             </div>{/* ends: .col-lg-3 */}
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="team-single team-four">
-                <img src="https://demo.jsnorm.com/html/tizara/dist/img/t12.jpg" alt="" />
+                <img src="/images/team/t14.jpg"  />
                 <div className="content text-center">
                   <h6><a style={{'color': '#413aa4'}} >Khizer Ahmed</a></h6>
                   <span className="subtitle">Web Designer</span>
@@ -251,13 +248,14 @@ export default function Home({products}) {
             </div>{/* ends: .col-lg-3 */}
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="team-single team-four">
-                <img src="https://demo.jsnorm.com/html/tizara/dist/img/t12.jpg" alt="" />
+                <img src="/images/team/t15.jpg"  />
                 <div className="content text-center">
-                  <h6><a style={{'color': '#413aa4'}} >Sidra Khan </a></h6>
-                  <span className="subtitle">WordPress Developer </span>
+                  <h6><a style={{'color': '#413aa4'}} >Javed Ahmed</a></h6>
+                  <span className="subtitle">Wordpress Developer</span>
                 </div>
               </div>{/* ends: .team-single */}
             </div>{/* ends: .col-lg-3 */}
+         
           </div>
         </div>
       </section>

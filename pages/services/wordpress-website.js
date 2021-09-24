@@ -1,14 +1,34 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import axios from 'axios'
+import {toast} from 'react-toastify';
 
 
 export default function Service() {
 
-    const handle = (e) => {
-        e.preventDefault();
-        alert('asdasd');
+  const handle = async (e) => {
+    e.preventDefault();
 
-    }
+    const params = new URLSearchParams();
+    params.append('name', e.target.name.value);
+    params.append('email', e.target.email.value);
+    params.append('phone', e.target.phone.value);
+    params.append('details', e.target.details.value);
+    params.append('service', e.target.service.value);
+    
+    axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/add_order.php`,params).then(function (response) {
+      // handle success
+      console.log(response);
+      document.querySelector(".my-form").reset();
+       toast.success(response.data);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(response.data);
+    });
+
+
+}
 
     const focus = () => {
     //   let ff = document.querySelectorAll('.order-form')[0].focus();
@@ -230,7 +250,7 @@ export default function Service() {
                   <div className="row">
                     <div className="col-lg-4 col-md-6 m-bottom-30">
                       <label className="form-label text-dark" >Full name </label>
-                      <input   name="name" type="text" placeholder="Your Name" className="form-control" required />
+                      <input  name="name" type="text" placeholder="Your Name" className="form-control" required />
                     </div>
                     <div className="col-lg-4 col-md-6 m-bottom-30">
                        <label className="form-label text-dark" >Email </label>
@@ -240,26 +260,10 @@ export default function Service() {
                       <label className="form-label text-dark" >Phone / whatsapp </label>
                       <input name="phone" type="text" placeholder="Number" className="form-control" required />
                     </div>
-                    <div className="col-lg-4 m-bottom-30">
-                      <label className="form-label text-dark" >Maximum Budget in USD Dollar ($)</label>
-                      <input type="number" placeholder="USD Dollar ($)" className="form-control" required />
-                    </div>
-                    <div className="col-lg-8 m-bottom-30">
-                      <label className="form-label text-dark" >Select Type </label>
-                      <select className="form-control" name="type">
-                            <option>Single or Landing Pages</option>
-                            <option>Resume Or Portfolio</option>
-                            <option>E-Commerce</option>
-                            <option>Business Or Agency</option>
-                            <option>Blogs Or News</option>
-                            <option>Classified</option>
-                            <option>Social media</option>
-                            <option>Custom</option>
-                       </select>
-                    </div>
+                 
                     <div className="col-lg-12 m-bottom-20">
                       <label className="form-label text-dark" >Provide Complete Details</label> 
-                      <textarea className="form-control" rows={7} placeholder="Message" required defaultValue={""} />
+                      <textarea name="details" className="form-control" rows={7} placeholder="Message" required defaultValue={""} />
                     </div>
                     <div className="col-lg-12 text-center m-top-30">
                       <button type="submit" className="btn btn-primary">Request Now</button>
