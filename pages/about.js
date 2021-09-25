@@ -7,6 +7,7 @@ export default function About() {
 
       <Head>
         <title>About Us</title>
+        <meta name="description" content="Owais Azam Technical Full Stack Front and Back End Developer Skills Desktop, Mobile and Website web Native Applications,Youtuber, Php,Jquery, Ajax,Laravel,Wordpress," />
       </Head>
 
       <section className="breadcrumb_area breadcrumb1">

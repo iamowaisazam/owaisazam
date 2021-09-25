@@ -39,6 +39,7 @@ export default function Service() {
 
       <Head>
         <title>Custom Web Development</title>
+        <meta name="description" content="Owais Azam Technical Full Stack Front and Back End Developer Custom Web Development Skills Desktop ,Youtuber, Php,Jquery, Ajax,Laravel,Wordpress," />
       </Head>
 
       <section className="breadcrumb_area breadcrumb1">

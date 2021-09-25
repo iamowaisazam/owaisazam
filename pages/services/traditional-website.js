@@ -42,6 +42,7 @@ export default function Service() {
 
       <Head>
         <title>Traditional Web Appliaction</title>
+        <meta name="description" content="Owais Azam Technical Full Stack Front and Back End Developer Traditional Web Appliaction Skills Desktop ,Youtuber, Php,Jquery, Ajax, Laravel " />
       </Head>
 
       <section className="breadcrumb_area breadcrumb1">

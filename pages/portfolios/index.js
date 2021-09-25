@@ -9,6 +9,7 @@ export default function Works({products}) {
     <>
       <Head>
         <title>Our Works</title>
+        <meta name="description" content="Owais Azam Technical Full Stack Front and Back End Developer. Our Works ,Youtuber, Php,Jquery, Ajax,Laravel,Wordpress," />
       </Head>
 
       <section className="breadcrumb_area breadcrumb1">

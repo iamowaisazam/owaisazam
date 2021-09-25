@@ -7,7 +7,10 @@ export default function Works({product}) {
    
   return (
     <>
-      <Head> <title>{product.title}</title></Head>
+      <Head> 
+        <title>{product.title}</title>
+        <meta name="description" content={product.excerpt} />
+      </Head>
         <section className="breadcrumb_area breadcrumb1">
               <div className="container">
               <div className="row">
@@ -34,10 +37,10 @@ export default function Works({product}) {
                 <div className="portfolio-thumbnail video-single video-overlay">
                   <figure>
                     <img src={`${product.thumbnail}`}  />
-                    <figcaption className="d-flex justify-content-center align-items-center">
+                    { product.video != null ? <figcaption className="d-flex justify-content-center align-items-center">
                       <Link href={product.video}><a target="_blank"  className="video-iframe play-btn play-btn--lg play-btn-light"><span className="fas fa-play" /></a> 
                       </Link>
-                    </figcaption>
+                    </figcaption> :'' }
                   </figure>
                 </div>
               </div>
@@ -51,18 +54,18 @@ export default function Works({product}) {
                         <li>
                             <span>Design &amp; Developed By: </span> 
                             <span> {product.credit} </span></li>
-                        <li>
+                      { product.author != null ?  <li>
                           <span>Author: </span> 
                           <span><Link href={product.author} ><a target="_blank" >{product.author_name}</a></Link></span>
-                        </li>
+                        </li> : '' }
                         <li><span>Technologies : </span> <span>{product.technologies}</span></li>
                         <li><span>Status: </span> <span>{product.status}</span></li>
                         <li><span>Date: </span> <span>{product.date}</span></li>
-                        <li><span>Project Demo: </span> 
+                        { product.demo != null ?  <li><span>Project Demo: </span> 
                             <span><Link href={product.demo}>
                                 <a target="_blank">{product.title}</a></Link>
                             </span>
-                        </li>
+                        </li> : '' }
                       </ul>
                     </div>
                   </div>

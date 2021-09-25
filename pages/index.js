@@ -18,6 +18,8 @@ export default function Home({products}) {
       `}</style>
         <Head>
             <title>Home</title>
+            <meta name="description" content="Owais Azam Technical Full Stack Front and Back End Developer Skills Desktop, Mobile and Website web Native Applications,Youtuber, Php,Jquery, Ajax,Laravel,Wordpress," />
+           
         </Head>
 
         <section className="home-banner" >
@@ -137,7 +139,7 @@ export default function Home({products}) {
 
       <section className="cta-wrapper cta--four bgimage biz_overlay overlay--secondary">
         <div className="bg_image_holder" style={{backgroundImage: 'url("/images/components/img1.jpg")', opacity: 1}}>
-          <img src="img/cbg2.jpg" alt="img/cbg2.jpg" />
+          
         </div>
         <div className="container content_above">
           <div className="row">
@@ -169,6 +171,8 @@ export default function Home({products}) {
          </div>
          <div className="row">
                 { products.map( (element,key) => {   
+                  if( key < 6 ) {
+
                  return <div key={key} className="col-lg-4 col-sm-6">
                   <Link href={`/portfolios/${element.slug}`}  ><a >
                     <div className="card card-shadow card-one">
@@ -181,11 +185,13 @@ export default function Home({products}) {
                       </div>
                     </div></a></Link>
                   </div>
+                  }
+
                    })
                 }
  
             <div className="col-lg-12 text-center m-top-50">
-              <Link href="/our-works"><a  className="btn btn-primary text-white ">View All</a></Link>
+              <Link href="/portfolios"><a  className="btn btn-primary text-white ">View All</a></Link>
             </div>
             </div>
           </div>
@@ -194,7 +200,7 @@ export default function Home({products}) {
 
       <section className="cta-wrapper cta--two bgimage biz_overlay overlay--dark">
         <div className="bg_image_holder" style={{backgroundImage: 'url("/images/components/cta2.png")', opacity: 1}}>
-          <img src="img/cta2.png"  />
+        
         </div>
         <div className="container content_above">
           <div className="cta-content row d-flex align-items-center">
@@ -211,7 +217,7 @@ export default function Home({products}) {
         </div>
       </section>
 
-      <section className="team-grid">
+      <section className="team-grid section-bg pb-5">
         <div className="container">
         <div className="row">
             <div className="col-12 text-center py-5 " >
@@ -259,9 +265,23 @@ export default function Home({products}) {
           </div>
         </div>
       </section>
+
       
-
-
+      <section className="py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-sm-6 col-md-6">
+                <img src="/images/components/img2.png"  />
+            </div>{/* ends: .col-lg-3 */}
+            <div className="align-self-center col-lg-6 col-sm-6 col-md-6">
+               <h3>Our Working Projects</h3>
+              <p>Take a moment to see our Recent Projects for Our Clients.Our designed portfolio represent a window for the world to view Our work and judge Our talent, skills and experience.</p>
+              <p>We have curated a list of our favourite design portfolio websites for you to explore and learn from.</p>
+              <Link href="/portfolios"><a  className="btn btn-primary text-white ">View All</a></Link>
+            </div>{/* ends: .col-lg-3 */}      
+          </div>
+        </div>
+      </section>
     </>
   )
 
