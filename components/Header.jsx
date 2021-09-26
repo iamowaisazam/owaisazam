@@ -28,35 +28,24 @@ const Header = () => {
     
     `}</style>
 
-
-<header id="header" className="header">
-      <section className="header header--2">
-          <div className=" top_bar top--bar2 d-flex align-items-center bg-primary">
+    <div className=" top_bar top--bar2 d-flex align-items-center bg-primary">
               <div className=" container">
                     <div className="row">
-                      <div className="col-md-8 d-none d-lg-block  align-self-center ">
-                          <div className="top_bar--info ">
-                              <ul>
-                                {/* <li><Link href="/terms-condition" ><a className="text-white" >Privacy Policy</a></Link></li>    
-                                <li><Link href="/terms-condition" ><a className="text-white" >Disclaimer</a></Link></li>    
-                                <li><Link href="/terms-condition" ><a className="text-white ">Terms &amp; Condition</a></Link></li> */}
-                              </ul> 
-                          </div>
-                      </div>
-                      <div className=" social-icons col-md-12 col-lg-4 align-self-center text-center text-lg-right" >
+                      <div className=" social-icons col-md-12 col-lg-12 align-self-center text-center text-lg-right" >
+                    
                       <Link  href="https://twitter.com/iamowaisazam" ><a target="_blank" ><i className="fab fa-twitter"></i></a></Link>
                       <Link href="https://www.facebook.com/owaisazamtechnical/"  ><a target="_blank"><i className="fab fa-facebook-square"></i></a></Link>
                       <Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi"  ><a target="_blank"><i className="fab fa-whatsapp"></i></a></Link>
                       <Link href="https://www.linkedin.com/in/owais-azam-b345a4149/" ><a target="_blank"><i className="fab fa-linkedin"></i></a></Link>
                       <Link href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a target="_blank"><i className="fab fa-youtube"></i></a></Link>
-                      
+                      <div id="google_translate_element"></div>
                       </div>
                   </div>
               </div>
         </div>
-    
-        <div className="desktop menu_area menu1">
-            <div className="topbar_container">
+
+      <header id="header" className="header">
+        <div className="desktop menu_area ">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light px-0">
                     <Link href="/" ><a className="navbar-brand order-sm-1 order-1" >
                     <img src="/images/logo.png" /></a></Link>
@@ -84,12 +73,12 @@ const Header = () => {
                               </li>   
                               <li className="main-menu-item" > </li>                                
                           </ul>   
-                      </div>
-                     </nav>
-                  </div>
-            </div>
+                </div>
+            </nav>
+        </div>
+      
 
-        <div className="mobile menu_area menu1">
+         <div className="mobile menu_area menu1">
               <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <Link href="/" ><a className="navbar-brand" >
                     <img src="/images/logo.png" /></a></Link>
@@ -120,8 +109,8 @@ const Header = () => {
                     </ul>
                 </div>
            </nav>
-        </div>
-       </section>
+        </div> 
+    
       </header>
       </>)
 }

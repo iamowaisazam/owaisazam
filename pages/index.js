@@ -152,7 +152,7 @@ export default function Home({products}) {
               <div className="cta-content text-center">
                 <p>If you have any questions regarding the purchase of business policy & consulting conditions please call us any time.</p>
                 <span className="phone"><i className="fab fa-whatsapp" /> +92 311 223 9342</span>
-                <Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi" target="_blank" ><a className="mx-2 btn btn-primary">Send Message</a></Link>
+                <Link href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi"  ><a target="_blank" className="mx-2 btn btn-primary">Send Message</a></Link>
                 <Link href="/contact" ><a className="mx-2 btn btn-primary">Get in Touch</a></Link>
               </div>
             </div>
@@ -270,10 +270,10 @@ export default function Home({products}) {
       <section className="py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-sm-6 col-md-6">
+            <div className=" py-3 col-md-6">
                 <img src="/images/components/img2.png"  />
             </div>{/* ends: .col-lg-3 */}
-            <div className="align-self-center col-lg-6 col-sm-6 col-md-6">
+            <div className="align-self-center py-3 col-md-6">
                <h3>Our Working Projects</h3>
               <p>Take a moment to see our Recent Projects for Our Clients.Our designed portfolio represent a window for the world to view Our work and judge Our talent, skills and experience.</p>
               <p>We have curated a list of our favourite design portfolio websites for you to explore and learn from.</p>

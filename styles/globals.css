@@ -16064,16 +16064,7 @@ header .mobile{
 
 }
 
-@media screen and (max-width: 576px) {
-  .goog-te-combo {
-  font-size: 15px;
-  width: 90%;
-  border: 5px;
-  right: 19px;
-  margin: 0px auto;
-}
 
-}
 
 @media screen and (max-width: 400px) {
 

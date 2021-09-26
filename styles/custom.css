@@ -157,3 +157,68 @@
     src: url('./fonts/9oRPNYsQpS4zjuA_iwgW.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+
+
+  .header{
+    width: 90%;
+    margin: auto;
+    display: block;
+    /* overflow: hidden; */
+  }
+
+  #google_translate_element{
+    display: inline;
+  }
+
+  .goog-te-gadget{
+    display: inline;
+  }
+
+  .goog-te-gadget > div {
+    display: inline;
+  }
+
+  .goog-te-combo{
+    display: inline;
+    position: static;
+  }
+
+  .menu_area .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    left: -152px;
+  
+}
+
+  .menu_area .navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    top: 4.66667rem !important;
+    opacity: 1;
+    visibility: visible;
+    left: -152px;
+    z-index: 11;
+}
+
+.menu_area {
+  box-shadow: none;
+  position: relative;
+}
+
+
+
+  @media screen and (max-width: 576px) {
+
+    .section_heading{
+      font-size: 44px;
+    }
+
+    .top_bar{
+      padding: 10px 0px;
+    }
+
+    .goog-te-combo {
+    font-size: 15px;
+    width: 80%;
+    border: 5px;
+    right: 19px;
+    margin: 0px auto;
+  }
+  
+  }

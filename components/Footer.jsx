@@ -63,7 +63,7 @@ return (
                             </li>
                             <li><span className="la la-envelope" />
                               <div className="info">
-                                <p>owaisazamtechnical@gmail.com</p>
+                                <p></p>
                                 <small>Free enquiry</small>
                               </div>
                             </li>
