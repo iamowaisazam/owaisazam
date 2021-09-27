@@ -32,12 +32,12 @@ Router.onRouteChangeError = url => {
 function MyApp({ Component, pageProps }) {
 
   return (
-                <Layout>
-                    <div className="">
+           <Layout>
+              <div className="">
                       <Component {...pageProps} />
-                    </div>
-                    <ToastContainer autoClose={2000}/>
-                </Layout>
+               </div>
+                <ToastContainer autoClose={2000}/>
+          </Layout>
         );
 }
 
