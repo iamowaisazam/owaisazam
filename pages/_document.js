@@ -16,16 +16,18 @@ class MyDocument extends Document {
                     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
                     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
                     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-                    <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' />
+                    {/* <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' /> */}
+                    <link rel='stylesheet' id='fontawesome-css' href='/all.css' type='text/css' media='all' />
                     <link rel="stylesheet" href="/css/plugins/nprogress.css" />
                 </Head>
                 <body>
-                  <Main />
-                  
-                  <div id="fb-root"></div>          
-                  <div className="fb-customerchat" attribution="setup_tool" page_id="114948109191925"> </div>
 
-                   <script src="/facebook.js" > </script>
+                  <Main />
+          
+                   <div id="fb-root"></div>          
+                   <div className="fb-customerchat" attribution="setup_tool" page_id="114948109191925"> </div>
+
+                   <script src="/js/facebook.js" > </script>
                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  </script>
                   
                   <NextScript />
