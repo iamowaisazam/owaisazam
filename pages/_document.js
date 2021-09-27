@@ -22,6 +22,10 @@ class MyDocument extends Document {
                 <body>
                   <Main />
                    
+      
+                  <div id="fb-root"></div>          
+                  <div className="fb-customerchat" attribution="setup_tool" page_id="114948109191925"> </div>
+
                    <script src="/facebook.js" > </script>
                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  </script>
                   

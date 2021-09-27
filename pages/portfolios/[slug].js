@@ -2,9 +2,10 @@ import React,{useEffect,us} from 'react';
 import Head from 'next/head'
 import {toast} from 'react-toastify';
 import Link from 'next/link'
+import { Markup } from 'interweave';
 
 export default function Works({product}) {
-   
+
   return (
     <>
       <Head> 
@@ -73,22 +74,7 @@ export default function Works({product}) {
                     <h3 className="m-bottom-20"> {product.title} </h3>
                     <hr />
                     <div className="content">
-                      <p>Application is Specially Designed &amp; Developed for Invoice &amp; Billing Management System.</p>
-                      <p id="item-description__theme-features">There are Following&nbsp; Features Of This Application.</p>
-                      <ol>
-                        <li>Responsive Design.</li>
-                        <li>Multiple Users.</li>
-                        <li>Roles &amp; Permissions</li>
-                        <li>Customers.</li>
-                        <li>Transaction’s.</li>
-                        <li>Products.</li>
-                        <li>Orders.</li>
-                        <li>Order Status</li>
-                        <li>Messages.</li>
-                        <li>Invoice Slips</li>
-                        <li>Reports</li>
-                        <li>Settings.</li>
-                      </ol>
+                      <Markup content={product.des} />
                     </div>
                     <hr />
                     <div style={{borderBottom: 'none', marginBottom: '8px'}} className="post-bottom d-flex justify-content-between">

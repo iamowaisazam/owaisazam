@@ -188,17 +188,24 @@
   
 }
 
-  .menu_area .navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  /* .menu_area .navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     top: 4.66667rem !important;
     opacity: 1;
     visibility: visible;
     left: -152px;
     z-index: 11;
-}
+} */
 
 .menu_area {
   box-shadow: none;
   position: relative;
+}
+
+
+.social-icons a {
+  padding: 0px 6px;
+  position: relative;
+  top: 3px;
 }
 
 
