@@ -11,12 +11,16 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@google-cloud/translate": "^6.3.1",
     "axios": "^0.21.1",
+    "he": "^1.2.0",
+    "html-entities": "^2.3.2",
     "interweave": "^12.8.0",
     "next": "10.0.6",
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-google-translate": "^1.0.11",
     "react-redux": "^7.2.2",
     "react-toastify": "^7.0.4",
     "redux": "^4.1.0",

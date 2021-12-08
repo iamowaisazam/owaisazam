@@ -10,9 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Router  from "next/router";
 
 NProgress.configure({ 
-  minimum: 0.5 ,
+  minimum: 0.5,
   showSpinner: false
-
 });
 
 
@@ -33,7 +32,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
            <Layout>
-              <div className="">
+               <div className="">
                       <Component {...pageProps} />
                </div>
                 <ToastContainer autoClose={2000}/>

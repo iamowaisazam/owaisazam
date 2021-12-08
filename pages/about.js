@@ -41,7 +41,7 @@ export default function About() {
             <div className="col-lg-4 text-center">
               <img style={{maxWidth: '341px', width: '100%'}} src="/images/owais/owaisazam2.jpg" className="rounded" />
               <div className="d">
-               <Link target="_blank" href="https://drive.google.com/file/d/1QYZQbRIMbVMK3IYWJl1QLrrnimMfltBY/view?usp=sharing" ><a  className="mx-1 btn btn-secondary btn-icon icon-left m-top-30">Resume</a></Link> 
+               <Link href="https://drive.google.com/file/d/1h0747nxDxXhstPXhHRrJNwBdogdT4smQ/view?usp=sharing" ><a  target="_blank"  className="mx-1 btn btn-secondary btn-icon icon-left m-top-30">Resume</a></Link> 
                <Link href="/contact" ><a  className="mx-1 btn btn-primary btn-icon icon-left m-top-30"> Contact Us</a></Link> 
               </div>
             </div>{/* ends: .video-single */}

@@ -1,9 +1,29 @@
-import React,{useEffect,us} from 'react';
+import React,{useEffect,useState} from 'react';
 import Head from 'next/head'
 import {toast} from 'react-toastify';
 import Link from 'next/link'
+import axios from 'axios';
 
-export default function Works({products}) {
+
+export default function Works() {
+
+  const [Portfolios, setPortfolios] = useState([]);
+  const [loading, setLoading] = useState(true);
+  
+
+  useEffect(() => {
+
+     getdata();
+  },[]);
+
+  const getdata = () => {
+
+    axios.get('https://azamsolutions.com/api/portfolios').then((res) => {
+      setPortfolios(res.data);
+      setLoading(false);
+    });
+
+  }
 
   return (
     <>
@@ -33,23 +53,28 @@ export default function Works({products}) {
       <section className="project-grid-3 py-5 ">
         <div className="card--one">
           <div className="container">
-            <div className="row">
-             { products.map( (element,key) => {   
-                return <div key={key} className="col-lg-4 col-sm-6">
-                  <Link href={`/portfolios/${element.slug}`}  ><a>
-                    <div className="card card-shadow card-one">
-                      <figure>
-                        <img src={element.thumbnail}  />
-                        <figcaption></figcaption>
-                      </figure>
-                      <div className="card-body">
-                        <h6>{element.title}</h6>
+          { loading == false ?
+                <div className="row">
+                { Portfolios.map( (element,key) => {   
+                    return <div key={key} className="col-lg-4 col-sm-6">
+                      <Link href={`/portfolios/get?slug=${element.slug}`} ><a>
+                        <div className="card card-shadow card-one">
+                          <figure>
+                            <img src={'https://azamsolutions.com/public/front/img/portfolio/'+element.thumbnail}  />
+                            <figcaption></figcaption>
+                          </figure>
+                          <div className="card-body">
+                            <h6>{element.title}</h6>
+                          </div>
+                        </div></a></Link>
                       </div>
-                    </div></a></Link>
-                  </div>
-                })
-            }
-         </div>
+                    })
+                }
+            </div>
+            : <div className="text-center" > <img src='/images/loader.gif' /> </div> 
+    
+        }
+
        </div>
      </div>
    </section>
@@ -57,14 +82,3 @@ export default function Works({products}) {
   )
 }
 
-
-export async function getStaticProps(){
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}`);  
-  const products = await res.json();  
-  return {
-      props:{
-          products,
-      }
-  }
-
-}

@@ -11,23 +11,24 @@ export default function Contact() {
 
     e.preventDefault();
   
-    const params = new URLSearchParams();
-    params.append('name', e.target.name.value);
-    params.append('email', e.target.email.value);
-    params.append('phone', e.target.phone.value);
-    params.append('details', e.target.details.value);
+    // const params = new URLSearchParams();
+    // params.append('name', e.target.name.value);
+    // params.append('email', e.target.email.value);
+    // params.append('phone', e.target.phone.value);
+    // params.append('details', e.target.details.value);
     
     
-    axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/contact.php`,params).then(function (response) {
+    // axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/contact.php`,params).then(function (response) {
       // handle success
-      document.querySelector(".my-form").reset();
-       toast.success(response.data);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error.data);
-    });
+      // document.querySelector(".my-form").reset();
+      //  toast.success(response.data);
+    // })
+    // .catch(function (error) {
+    //   // handle error
+    //   console.log(error.data);
+    // });
 
+    toast.success('Form Submited');
   
   }
 
@@ -77,16 +78,7 @@ export default function Contact() {
                     <li>Email:<a className="phone-number" href="email:+owaisazamtechnical@gmail.com"> owaisazamtechnical@gmail.com</a></li>
                   </ul>
                 </div>
-                <div className="address-list mb-4 mb-xl-10 pb-2 ">
-                  <h4 className="title">Social Networks</h4>
-                  <div className="contact-social-icons " >
-                    <Link target="_blank" href="https://twitter.com/iamowaisazam" ><a><i className="fab fa-twitter"></i></a></Link>
-                    <Link target="_blank" href="https://www.facebook.com/owaisazamtechnical/" ><a><i className="fab fa-facebook-square"></i></a></Link>
-                    <Link target="_blank" href="https://api.whatsapp.com/send?phone=+923112239342&text=Hi" ><a><i className="fab fa-whatsapp"></i></a></Link>
-                    <Link target="_blank" href="https://www.linkedin.com/in/owais-azam-b345a4149/" ><a><i className="fab fa-linkedin"></i></a></Link>
-                    <Link target="_blank" href="https://www.youtube.com/channel/UCN5SvyR9xoe5sxl1TxE1u_g?view_as=subscriber" ><a><i className="fab fa-youtube"></i></a></Link>
-                  </div>
-                </div>
+             
               </div>
             </div>    
             <div className="col-lg-6 mb-7">
